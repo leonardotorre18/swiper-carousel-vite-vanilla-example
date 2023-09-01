@@ -1,0 +1,47 @@
+:root {
+  // Con este valor se cambia de color los botones de swiper
+  --swiper-theme-color: #f2f2f2 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f2f2f2;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+
+// Ajusto las medidas del contenedor para ocupar toda la pantalla
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper {
+  height: 100%;
+  padding: 0 50px !important;
+  .swiper-wrapper {
+    height: 100%;
+    .swiper-slide {
+      height: 100%;
+      opacity: .5;
+      transition: opacity .3s ease-in;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    }
+    .swiper-slide-active {
+      opacity: 1;
+
+    }
+  }
+}
